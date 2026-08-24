@@ -1,7 +1,7 @@
 # TrialsAnalysis
 Creating an R package that makes analysing field trail data easier.
 
-##Task List
+## Task List
 This task list should be updated every meeting to keep track of progress
 
 - [ ] Create a folder structure
