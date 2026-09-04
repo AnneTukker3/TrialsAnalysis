@@ -19,3 +19,11 @@ A dataframe containing the original accession list and a replication column.
 \description{
 replicating accessions in a list n times
 }
+\examples{
+\dontrun{
+replicated_dataframe <- replicator(
+ df = mydata,
+ column = line, # column name, 
+ replication = 5 # number of replications
+ ) }
+}

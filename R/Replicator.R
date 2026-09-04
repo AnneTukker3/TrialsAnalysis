@@ -6,14 +6,14 @@
 #' 
 #' @return A dataframe containing the original accession list and a replication column.
 #' 
-#' @example
+#' @examples
 #' \dontrun{
 #' replicated_dataframe <- replicator(
 #'  df = mydata,
 #'  column = line, # column name, 
 #'  replication = 5 # number of replications
 #'  ) }
-#'  @export
+#' @export
 replicator <- function(df, column, replication){
   df |> dplyr::slice(rep(1:dplyr::n(), each = replication)) |> 
     dplyr::group_by({{column}}) |> #group the df based on "column"
